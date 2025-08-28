@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>System Breach</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      font-family: 'Share Tech Mono', monospace;
+      color: #ccc;
+      overflow: hidden;
+    }
+
+    #typewriter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      text-align: center;
+      font-size: 1.2em;
+      line-height: 1.8;
+      white-space: pre-line;
+      text-shadow: 0 0 10px #fff;
+      max-width: 800px;
+      padding: 0 20px;
+      margin: 0 auto;
+    }
+
+    .container {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 2s ease-out forwards;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #fff;
+      text-shadow: 0 0 10px white;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+    }
+
+    h2, h3 {
+      color: #ccc;
+      text-shadow: 0 0 5px #fff;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #ccc;
+      text-shadow: 0 0 5px #fff;
+      margin: 10px 0;
+    }
+
+    .terminal-line {
+      color: #ccc;
+      font-family: monospace;
+      font-size: 1em;
+      margin-top: 30px;
+    }
+
+    .discord {
+      margin-top: 40px;
+      font-size: 1em;
+      color: #ccc;
+      padding: 12px 24px;
+      border: 1px solid #555;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      text-shadow: 0 0 10px white;
+    }
+
+    .discord:hover {
+      background-color: #fff;
+      color: #000;
+      border-color: #fff;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      color: #444;
+      text-shadow: 0 0 5px white;
+    }
+  </style>
+</head>
+<body>
+
+<div id="typewriter"></div>
+
+<div class="container" id="mainContent">
+  <img src="https://d.top4top.io/p_3500ze8cq1.jpg" alt="Discord Image">
+  <h1>HACKED !!!</h1>
+  <h2>Do you know me?</h2>
+  <h3>Hi 3kawi, I’m 3zo.</h3>
+  <p>If you want to stop me, the only way It's kill me.</p>
+  <div class="terminal-line"><span style="color:#fff;"></span></div>
+  <a class="discord" href="https://discord.gg/fQmVWYdy"> user@3zo~$</a>
+  <a class="discord" href="https://discord.gg/fQmVWYdy"> discord.gg/7rbi</a>
+</div>
+
+<audio autoplay loop>
+        <source src="https://e.top4top.io/m_3500wdwlt1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+<script>
+  const lines = [
+    ">> Accessing system...",
+    ">> Authentication bypassed.",
+    ">> Root privileges granted.",
+    "",
+    "You thought you were alone...",
+    "You were wrong.",
+    "",
+    "We are watching.",
+    "We are inside.",
+    "",
+    "This isn't a warning.",
+    "It's the beginning.",
+    "",
+    "— 3zo — "
+  ];
+
+  const typeEl = document.getElementById("typewriter");
+  const mainContent = document.getElementById("mainContent");
+  let line = 0, char = 0;
+
+  function type() {
+    if (line < lines.length) {
+      const text = lines[line];
+      if (char < text.length) {
+        typeEl.innerHTML += text.charAt(char);
+        char++;
+        setTimeout(type, 35);
+      } else {
+        typeEl.innerHTML += "\n";
+        line++;
+        char = 0;
+        setTimeout(type, 300);
+      }
+    } else {
+      setTimeout(() => {
+        typeEl.style.display = 'none';
+        mainContent.style.display = 'flex';
+      }, 1000);
+    }
+  }
+
+  type();
+</script>
+<script>
+  
+</script>
+</script>
+</body>
+</html>
